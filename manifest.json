@@ -1,0 +1,13 @@
+{
+	"name": "Snorlaxiser",
+	"version": "0.1",
+	"description": "Extnesion to make pages reads as though said by the Pokemon Snorlax.",
+	"background_page": "snorlax.html",
+	"browser_action": {
+		"name": "Snorlaxise This Page!",
+		"default_icon": "snorlax.png"
+	},
+	"permissions": [
+		"tabs", "http://*/*"
+	]
+}
