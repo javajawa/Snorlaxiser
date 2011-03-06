@@ -8,6 +8,6 @@
 		"default_icon": "snorlax.png"
 	},
 	"permissions": [
-		"tabs", "http://*/*"
+		"tabs", "http://*/*", "https://*/*"
 	]
 }
