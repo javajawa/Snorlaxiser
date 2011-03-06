@@ -12,15 +12,6 @@ syllableCount.pattern  = new RegExp("[aeiouy]([^aieouy]|$)", 'gim');
 syllableCount.silentE  = new RegExp("[aeiouy][^aeiouy]e([^a-z]|s|$)", 'i');
 syllableCount.silentEs = new RegExp("[aeiouy][^aeiouy]e([^a-z]|s|$)", 'gim');
 
-function convertNodes(node) {
-  if (node.nodeType == 3) { // 3 is a Text Node
-    node.nodeValue = convertText(node.nodeValue);
-  } else {
-    var m = node.childNodes.length;
-    for (var i = 0; i < m; i ++) convertNodes(node.childNodes[i]);
-  }
-}
-  
 function convertText(str) {
   var words = str.match(convertText.splitIntoWords);
   if (words == null) return str;
@@ -59,4 +50,13 @@ convertText.upperSyllables = new Array (
   'Snor',
   'Lax'
 );
+
+function convertNodes(node) {
+  if (node.nodeType == 3) { // 3 is a Text Node
+    node.nodeValue = convertText(node.nodeValue);
+  } else {
+    var m = node.childNodes.length;
+    for (var i = 0; i < m; i ++) convertNodes(node.childNodes[i]);
+  }
+}
 
