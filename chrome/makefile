@@ -1,3 +1,3 @@
 snorlax-auto:
-	cat snorlax.js auto.js > autosnor.js
+	cat ../script/snorlax.js auto.js > autosnor.js
 
