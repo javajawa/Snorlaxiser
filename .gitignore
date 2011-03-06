@@ -1,2 +1,6 @@
+# Do not include the compiled google plugin
+snorlax.crx
+# Do not publish the private key use to create the google chrome plugin
 snorlax.pem
+# Do not cache the generated script file for the chrome plugin
 autosnor.js

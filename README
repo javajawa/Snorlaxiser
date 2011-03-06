@@ -1,0 +1,12 @@
+== Snorlaxiser ==
+
+Program that converts HTML text nodes that are the child of an arbitary root
+node into the speech of Pokemon. The effect is achieved by estimating the
+number of syllables in each word, and generating a psuedo-random string of
+replacement syllables from a list of possibilities.
+
+Currently, there are two deployable sections in the repo. The first is the
+stand alone script file, which can be included and used in any webpage.
+This is contained in the script/ directoy.
+The chrome/ directory contains the files needed to make the Google Chrome
+browser plugin.
